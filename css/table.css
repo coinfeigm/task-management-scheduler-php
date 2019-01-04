@@ -1,0 +1,121 @@
+/* ---------------------------------------------------
+  DATATABLES STYLE
+----------------------------------------------------- */
+
+th {
+  background: #022F40;
+  border-right: 1px solid #343a45;
+  color: #D5DDE5;
+  text-align: center !important;
+  white-space: nowrap;
+}
+
+.dataTables_scrollHead th:last-child {
+  border-right: none;
+}
+
+td {
+  border-right: 1px solid #C1C3D1;
+}
+
+.dataTables_scrollBody td:last-child,
+#taskListTable td:last-child {
+  border-right: none;
+}
+
+.odd.DTFC_NoData .dataTables_empty {
+  border-right: none;
+  visibility: hidden;
+}
+
+tr {
+  background: #D5DDE5;
+  color: #666B85;
+  font-size: 75%;
+  text-align: center;
+  white-space: nowrap;
+}
+
+table.dataTable.no-footer {
+  border-bottom: none !important;
+  width: 100% !important;
+}
+
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+  border-bottom: none !important;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+#memberstbl_wrapper .dataTables_scrollHeadInner {
+  width: auto !important;
+}
+
+#memberstbl_wrapper .dataTable.no-footer {
+  width: 100% !important;
+}
+
+#trainingtbl_wrapper td.hover {
+  background: #f6f6f6;
+  color: #666B85;
+}
+
+div.dt-buttons {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.current {
+  background-color: #337AB7 !important;
+  color: #FFFFFF !important;
+}
+
+.finished-member {
+  background-color: #a1887f;
+  color: #FFFFFF;
+  border-color: white !important;
+}
+
+.finished-admin {
+  background-color: #757575;
+  color: #FFFFFF;
+}
+
+.retired {
+  background-color: black !important;
+  color: #666B85 !important;
+}
+
+.passed-due-warning {
+  background-color: #dfec29 !important;
+}
+
+.passed-due {
+  background-color: #d9534f !important;
+  color: #FFFFFF !important;
+}
+
+p.notif {
+  color: red;
+  font-weight: bold;
+}
+
+div.jconfirm-content {
+  padding-top: 15px;
+}
+
+table.row-border.ng-scope.ng-isolate-scope.dataTable.no-footer.fixedHeader-floating {
+  float: right;
+}
+
+.member-task-ongoing {
+  background-color: #2196f3 !important;
+  color: #FFFFFF !important;
+}
+
+.member-task-finished {
+  background-color: #757575 !important;
+  color: #FFFFFF;
+}

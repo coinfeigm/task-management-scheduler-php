@@ -1,0 +1,368 @@
+/* ---------------------------------------------------
+    MAIN PAGE STYLE
+----------------------------------------------------- */
+
+body,
+html {
+    font-family: FontAwesome, 'Open Sans', sans-serif;
+    font-size: 14px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #efebe9;
+}
+
+.cb {
+    margin-left: 10px;
+    font-size: 14px !important;
+}
+
+.cb span {
+    padding-top: 2px;
+}
+
+.centermargin {
+    margin-top: 15px;
+}
+
+.checkboxfilters {
+    position: absolute;
+}
+
+.btn-toolbar {
+    float: right;
+    position: absolute;
+    right: 0px;
+    top: 8px;
+}
+
+.pointer {
+    cursor: pointer;
+    text-decoration: none !important;
+}
+
+/* ---------------------------------------------------
+    DATATABLE Custom STYLE
+----------------------------------------------------- */
+
+#trainingtbl_wrapper div.dt-buttons {
+    margin-top: 0px !important;
+}
+
+.dt-buttons {
+    margin-left: 20px !important;
+    margin-top: 0px !important;
+}
+
+button.dt-button.btn-download,
+button.dt-button.buttons-excel.buttons-html5 {
+    background-color: #5cb85c;
+    background-image: none;
+    border-color: #5cb85c;
+    border-radius: .2rem;
+    color: #fff;
+    font-size: .875rem;
+    margin-left: 30px;
+    padding: 7px;
+}
+
+button.dt-button.btn-download:hover,
+button.dt-button.btn-download:active,
+button.dt-button.buttons-excel.buttons-html5:hover,
+button.dt-button.buttons-excel.buttons-html5:active {
+    background-color: #217345 !important;
+    background-image: none !important;
+    border-color: #217345;
+    border-radius: .2rem;
+    color: #fff;
+    font-size: .875rem;
+    padding: 7px;
+}
+
+.advancedSearch {
+    float: right;
+    position: absolute;
+    z-index: 2;
+    background-color: transparent;
+    background-image: none !important;
+    border: none;
+    font-size: .875rem !important;
+    margin-left: 30px;
+    padding: 7px;
+    right: 15px;
+}
+
+*:focus {
+    outline: none;
+}
+
+.advancedSearch .fa {
+    font-size: 23px !important;
+    color: #022F40 !important;
+}
+
+.advancedSearch.activeSearch .fa {
+    color: #d9534f !important;
+}
+
+.advancedSearch:hover {
+    background-color: #c4c2c2;
+}
+
+button.dt-button.advancedSearch:hover,
+button.dt-button.advancedSearch:active {
+    background-color: #5a6268 !important;
+    background-image: none !important;
+    border-color: #5a6268;
+    border-radius: .2rem;
+    color: #fff;
+    font-size: .875rem;
+    padding: 7px;
+}
+
+button.dt-button.btn-download .fa {
+    padding: 0px !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button,
+.dataTables_wrapper .dataTables_paginate .paginate_button .previous {
+    background-color: #fff !important;
+    border: 1px solid #dee2e6 !important;
+    color: #007bff !important;
+    line-height: 1.25;
+    margin-left: -1px;
+    padding: .5rem .75rem;
+    position: relative;
+}
+
+#trainingtbl_filter input[type=search] {
+    margin-right: 20px;
+    background-color: white;
+    background-image: url('../vendors/images/search.png');
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 5px 20px 5px 30px;
+    transition: width 0.4s ease-in-out;
+    width: 60px;
+    -moz-transition: width 0.4s ease-in-out;
+    -ms-transition: width 0.4s ease-in-out;
+    -webkit-transition: width 0.4s ease-in-out;
+}
+
+#trainingtbl_filter input[type=search]:hover,
+#trainingtbl_filter input[type=search]:focus {
+    width: 250px;
+}
+
+#trainingtbl_length select {
+    background-clip: padding-box;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: .25rem;
+    color: #464a4c;
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 1.25;
+    padding: .5rem .75rem;
+    transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -webkit-background-clip: padding-box;
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+}
+
+.searchClass {
+    width: 250px !important;
+}
+
+/* ---------------------------------------------------
+    Loading STYLE
+----------------------------------------------------- */
+
+.loading {
+    margin-left: 46vw;
+    margin-top: 40vh;
+    width: 50px;
+    height: 50px;
+}
+
+.loadingWBS {
+    margin-left: 47%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 50px;
+    height: 50px;
+}
+
+.spinner {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    margin: 0 auto;
+}
+
+.bubble-1,
+.bubble-2 {
+    position: absolute;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 90%;
+    background-color: #4b9cdb;
+}
+
+.bubble-2 {
+    top: auto;
+    bottom: 0;
+}
+
+.spinner {
+    animation: loadingI 2s linear infinite;
+}
+
+.bubble-1,
+.bubble-2 {
+    animation: bounce 2s ease-in-out infinite;
+}
+
+.bubble-2 {
+    animation-delay: -1.0s;
+}
+
+@keyframes loadingI {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: scale(0.0);
+    }
+    50% {
+        transform: scale(1.0);
+    }
+}
+
+/* ---------------------------------------------------
+    CALENDAR MODAL CUSTOM STYLE
+----------------------------------------------------- */
+
+#calendarDiv,
+.gldp-default {
+    clear: both;
+    width: 400px;
+    height: 300px;
+    left: 15px !important;
+    display: block !important;
+    background: white !important;
+    position: relative !important;
+}
+
+.gldp-default .core {
+    cursor: pointer !important;
+    background: white !important;
+    color: black;
+    border: none;
+}
+
+.gldp-default .dow {
+    cursor: pointer !important;
+    background: white !important;
+    color: black;
+    border: none;
+}
+
+.gldp-default .selected {
+    background: lightblue !important;
+}
+
+.gldp-default .monyear {
+    background: #022F40 !important;
+    color: white;
+    font-family: 'Open Sans', sans-serif !important;
+    text-shadow: none !important
+}
+
+.gldp-default .today {
+    color: #0288D1;
+}
+
+.gldp-default .special {
+    background: #7F7FFF !important;
+    color: white;
+}
+
+.gldp-default .outday {
+    opacity: 0.5 !important;
+    background: white !important;
+}
+
+.gldp-default .sat,
+.gldp-default .sun {
+    color: red !important;
+}
+
+#calendarModal .modal-content {
+    width: 460px;
+}
+
+#calendarModal .modal-dialog .modal-body {
+    height: 370px;
+}
+
+.notifyjs-corner {
+    z-index: 99999 !important;
+}
+
+.jconfirm {
+    z-index: 9999 !important;
+}
+
+#getHoliday {
+    float: right;
+    color: #bdbdbd;
+}
+
+#getHoliday:hover {
+    text-decoration: none;
+    color: #022F40;
+}
+
+small[class='header'] {
+    cursor: pointer;
+}
+
+hr {
+    height: 1px;
+    color: #123455;
+    background-color: #123455;
+    border: none;
+}
+
+.jconfirm-box {
+    background-color: whitesmoke !important;
+}
+
+.jconfirm-title-c {
+    padding-bottom: 0px !important;
+}
+
+.jconfirm .jconfirm-box .jconfirm-buttons button:disabled {
+    cursor: not-allowed;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+.btns {
+    padding-top: 10px !important;    
+}

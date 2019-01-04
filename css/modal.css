@@ -1,0 +1,53 @@
+/* ---------------------------------------------------
+  MODAL STYLE
+----------------------------------------------------- */
+.modal-body {
+    background-color: #efebe9;
+}
+
+.modal-sm {
+    max-width: 50vh !important;
+}
+
+nav.navbar {
+    background-color: #438eb9;
+} 
+
+nav.navbar a.navbar-brand {
+    color: white;
+}
+
+.btn-link {
+    color: white;
+}
+
+#p-form-training {
+    flex-flow: column !important;
+}
+
+#p-datepicker-1, #p-datepicker-2, #filter-datepicker-1, #filter-datepicker-2 {
+    background: white !important;
+}
+
+.hide {
+    display: none;
+}
+
+.alert-danger {
+    font-size: 10pt;
+}
+
+input:invalid, select:invalid {
+    box-shadow: none !important; /*Mozilla*/
+    outline: none; /*IE*/
+}
+
+.modal-body select {
+    font-family: FontAwesome, "Open Sans";
+}
+
+#searchModal select,
+#searchModal input[type="search"] {
+    max-width: 300px !important;
+    width: 300px !important;
+}

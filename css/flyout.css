@@ -1,0 +1,435 @@
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+#sidebar, #memberSidebar {
+    background-color: #efebe9;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+    color: black;
+    font-size: 16px;
+    height: 100vh;
+    padding-top: 0px !important;
+    position: fixed;
+    right: -100vw;
+    transition: all 0.7s;
+    top: 0;
+    width: 100vw;
+    z-index: 997;
+}
+
+#sidebar.active, #memberSidebar.active {
+    right: 0;
+}
+
+#sidebarContent, #memberSidebarContent {
+    padding: 0px 20px;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    height: 100vh;
+    position: fixed;
+    width: 100vw;
+    z-index: 996;
+}
+
+/* ---------------------------------------------------
+    HEADER STYLE
+----------------------------------------------------- */
+
+.sidebarNav, .memberSidebarNav {
+    padding-top: 11px !important;
+    padding-bottom: 12px !important;
+}
+
+.sidebarNav .header, .memberSidebarNav .header {
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 18px;
+}
+
+nav.navbar .btn-link:hover,
+.btn-link:focus {
+    color: lightgray;
+    text-decoration: none;
+}
+
+nav.navbar .dropdown-menu {
+    left: -150%;
+}
+
+nav.navbar .dropdown-item {
+    font-size: 14px;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#div-content {
+    position: absolute;
+    transition: all 0.3s;
+    width: 100%;
+}
+
+#sidebar button,
+#sidebar .form-inline select {
+    margin: 0px 5px;
+}
+
+#sidebar .fa,
+#memberSidebar .fa {
+    padding: 5px;
+    font-size: 15px;
+}
+
+#sidebar form#taskOptions,
+#sidebar div#memberOptions,
+#memberSidebar div#reviewerOptions,
+#memberSidebar div#revieweeOptions {
+    margin-right: 200px;
+    padding-top: 28px;
+    position: relative;
+    top: 35px;
+    z-index: 997;
+}
+
+.custom-checkbox .custom-control-indicator {
+    border-radius: .25rem;
+    background-color: white;
+    border: 1px solid darkgray;
+}
+
+.custom-checkbox .custom-control-indicator:disabled {
+    border-radius: .25rem;
+    background-color: white;
+    border: none;
+}
+
+.nobotmargin {
+    margin-bottom: 0px;
+}
+
+.withtopmargin {
+    margin-top: 20px;
+}
+
+.withtopmrgnbtn {
+    margin-top: 5px;
+}
+
+.display {
+    visibility: hidden;
+}
+
+.expand {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.expand .modal-content{
+    width: 80vw !important;
+}
+
+/* ---------------------------------------------------
+   SIDEBAR DATATABLE CUSTOM STYLE 
+----------------------------------------------------- */
+
+#sidebar table th:nth-child(4),
+#memberSidebar table th:nth-child(4) {
+    text-align: center;
+}
+
+#sidebar table td:nth-child(3) {
+    max-width: 90px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#memberSidebar table th:nth-child(5) {
+    max-width: 30px;
+}
+
+#membersTable_filter,
+#tasksTable_filter {
+    padding-right: 20px;
+}
+
+#sidebar #tasksTable i,
+#sidebar #membersTable i,
+#memberSidebar #reviewersTable i,
+#memberSidebar #revieweesTable i {
+    padding: 0px 10px;
+}
+
+#reviewersTable_filter input[type="search"],
+#revieweesTable_filter input[type="search"],
+#memberListTable_filter input[type="search"],
+#membersTable_filter input[type="search"],
+#tasksTable_filter input[type="search"],
+#taskListTable_filter input[type="search"], 
+#wbstbl_filter input[type=search]  {
+    width: 60px;
+    height: 35px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../vendors/images/search.png');
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    padding: 5px 20px 5px 30px;
+    -webkit-transition: width 0.4s ease-in-out;
+    -ms-transition: width 0.4s ease-in-out;
+    -moz-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+#wbstbl_filter input[type="search"]:hover,
+#wbstbl_filter input[type="search"]:focus {
+    width: 250px;
+}
+
+#memberListTable_filter input[type="search"]:hover,
+#memberListTable_filter input[type="search"]:focus,
+#reviewersTable_filter input[type="search"]:hover,
+#reviewersTable_filter input[type="search"]:focus,
+#revieweesTable_filter input[type="search"]:hover,
+#revieweesTable_filter input[type="search"]:focus,
+#membersTable_filter input[type="search"]:hover,
+#membersTable_filter input[type="search"]:focus {
+    width: 210px;
+}
+
+#tasksTable_filter input[type="search"]:hover,
+#tasksTable_filter input[type="search"]:focus {
+    width: 120px;
+}
+
+#taskListTable_filter input[type="search"]:hover,
+#taskListTable_filter input[type="search"]:focus {
+    width: 150px;
+}
+
+#wbstbl_length select {
+    background-clip: padding-box;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: .25rem;
+    color: #464a4c;
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 1.25;
+    padding: .5rem .75rem;
+    transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -webkit-background-clip: padding-box;
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+}
+
+#wbsModal {
+    font-size: 90%;
+}
+
+.memberSearchClass {
+    width: 210px !important;
+}
+
+.taskSearchClass {
+    width: 120px !important;
+}
+
+.taskListSearchClass {
+    width: 150px !important;
+}
+
+.wbsSearchClass {
+    width: 80% !important;
+}
+/* ---------------------------------------------------
+    MODAL CUSTOM STYLE
+----------------------------------------------------- */
+
+.modal-backdrop {
+    z-index: 0;
+}
+
+#memberModal table tr,
+#taskModal table tr,
+#searchModal table tr {
+    background-color: transparent;
+}
+
+#memberModal table th,
+#memberModal table td,
+#taskModal table th,
+#taskModal table td,
+#searchModal table th,
+#searchModal table td {
+    padding: 2.5px;
+    border: none !important;
+}
+
+#memberModal table th,
+#taskModal table th,
+#searchModal table th {
+    width: 150px;
+    text-align: right !important;
+    background-color: transparent;
+    color: black;
+    vertical-align: center;
+}
+
+#searchModal table th {
+    width: 100px;
+}
+
+.modal-header {
+    background-color: #438eb9;
+}
+
+.modal-title {
+    color: white;
+}
+
+div.modal input,
+div.modal textarea,
+div.modal select {
+    font-size: 12px;
+}
+
+div#searchModal select {
+    color: grey;
+}
+
+.content {
+    padding: 20px 50px;
+}
+
+nav {
+    padding-top: 13px;
+    padding-bottom: 10px;
+    background: #438EB9;
+}
+
+nav .header {
+    padding: 0 0 0 15px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 18px;
+}
+
+.dataTables_scroll .dataTables_scrollHead,
+.dataTables_scroll .dataTables_scrollBody {
+    min-width: 510px;
+}
+
+#membersTable_wrapper.dataTables_wrapper .dataTables_scroll {
+    overflow: auto;
+}
+
+#tasksTable_wrapper.dataTables_wrapper .dataTables_scroll {
+    overflow: auto;
+}
+
+.daterange {
+    font-weight: bold;
+    color: #022F40;
+}
+
+#wbsStartdate, #wbsEnddate {
+    background: white !important;
+}
+
+/* ---------------------------------------------------
+    BROWSER OVERRIDES
+----------------------------------------------------- */
+
+::-webkit-input-placeholder {
+    font-size: 12px !important;
+    color: lightgrey !important;
+}
+
+:-moz-placeholder {
+    font-size: 12px !important;
+    color: lightgrey !important;
+}
+
+::-moz-placeholder {
+    font-size: 12px !important;
+    color: lightgrey !important;
+}
+
+@media (min-width: 640px) {
+    #sidebar form#taskOptions,
+    #sidebar div#memberOptions,
+    #memberSidebar div#reviewerOptions,
+    #memberSidebar div#revieweeOptions {
+        position: relative;
+        padding-top: 0px;
+        /* width: 60%; */
+    }
+}
+
+@media (min-width: 550px) {
+    #sidebar, #memberSidebar {
+        width: 550px;
+        right: -550px;
+    }
+}
+
+/* ---------------------------------------------------
+    VALIDATION STYLE
+----------------------------------------------------- */
+
+.ng-invalid-required.ng-touched,
+.not-unique,
+.not-unique:focus {
+    border: 1px solid red;
+}
+
+.shakeNotif {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s; 
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite; 
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+   30% { transform: rotate(15deg); }
+   50% { transform: rotate(0deg); }
+   70% { transform: rotate(-15deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.display {
+    visibility: hidden;
+}
+
+
+/* Updated 2018-04-11 */
+.expand {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.expand .modal-content{
+    width: 80vw !important;
+}
+
+.defaultoption {
+    display: none;
+}
+
+#sidebar button.btn-default:enabled:hover {
+    background-color: #464a4c !important;
+    color: white !important;
+}
